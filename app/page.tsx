@@ -26,15 +26,21 @@ export default function Home() {
         </div>
         </aside>
         <aside className=' flex space-x-2 justify-around items-center'>
-          <p className=' hover:underline'>
+          <p className='underline cursor-pointer underline-offset-4'>
             Home
           </p>
-          <p className=' hover:underline'>
+          <p className=' hover:underline cursor-pointer underline-offset-4'>
             info
           </p>
         <Button onClick={route} className=' rounded-full bg-white text-black' variant="ghost">Vote now</Button>
         </aside>
       </header>
+      <section className='flex flex-col items-center w-full'>
+        <h1 className='font-bold text-[70px] text-center mt-[15%] capitalize'>
+          vote wisely, <br /> vote right!
+        </h1>
+        <Button onClick={route} className=' p-8 hover:bg-white rounded-full bg-white text-black' >Click here to vote <span className=' ml-2'>&#8594;</span></Button>
+      </section>
     </main>
   )
 }
